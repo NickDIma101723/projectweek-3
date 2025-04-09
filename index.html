@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book webshop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#2F3EF] flex flex-col items-center min-h-screen pt-[70px]">
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-md">
+        <div class="flex justify-between items-center p-5">
+            <div>
+                <img class="w-[150px] h-10" src="images/PagePlunge.svg" alt="">
+            </div>
+            <ul class="flex space-x-5 text-2xl font-semibold font-['Cormorant_Garamond']">
+                <li class="hover:text-[#E63946] transition duration-700"><a href="#">Home</a></li>
+                <li class="relative group">
+                    <a class="hover:text-[#E63946] transition duration-700" href="#">Categories</a>
+                    <ul class="absolute hidden group-hover:block bg-white text-black mt-2 p-2 rounded-xl shadow-lg space-y-2">
+                        <li class="hover:text-[#E63946] transition duration-700"><a href="#">Romance</a></li>
+                        <li class="hover:text-[#E63946] transition duration-700"><a href="#">Science Fiction</a></li>
+                        <li class="hover:text-[#E63946] transition duration-700"><a href="#">Non-Fiction</a></li>
+                        <li class="hover:text-[#E63946] transition duration-700"><a href="#">Horror</a></li>
+                        <li class="hover:text-[#E63946] transition duration-700"><a href="#">Adventure</a></li>
+                    </ul>
+                </li>
+                <li class="hover:text-[#E63946] transition duration-700"><a href="#">Product</a></li>
+                <li class="hover:text-[#E63946] transition duration-700"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="flex justify-center items-center bg-[#1D1D1D] gap-[160px] w-full h-[500px]">
+        <div class="flex bg-[#FBFBFC] w-[500px] h-[350px] rounded-2xl">
+            <div class="flex-1 flex flex-col justify-center pl-8">
+                <h1 class="font-['Playfair_Display'] italic text-3xl font-bold font-['Cormorant_Garamond']">Gone with the Wind</h1>
+                <p class="text-lg font-semibold font-['Cormorant_Garamond'] mt-1 mb-20">Margaret Mitchell</p>
+                <button class="mt-12 bg-transparent border border-[#606C38] rounded-lg py-2 px-4 w-[150px] text-center text-[#606C38] hover:text-white hover:bg-[#606C38] transition duration-700 easy-in-out">Learn More</button>
+            </div>
+            <div class="flex-1 flex items-center justify-center">
+                <img class="h-[300px]" src="images/Book1.jpg" alt="">
+            </div>
+        </div>
+        <div class="flex bg-[#FBFBFC] w-[500px] h-[350px] rounded-2xl">
+            <div class="flex-1 flex flex-col justify-center pl-8">
+                <h1 class="font-['Playfair_Display'] italic text-3xl font-bold font-['Cormorant_Garamond']">Gone with the Wind</h1>
+                <p class="text-lg font-semibold font-['Cormorant_Garamond'] mt-1 mb-20">Margaret Mitchell</p>
+                <button class="mt-12 bg-transparent border border-[#606C38] rounded-lg py-2 px-4 w-[150px] text-center text-[#606C38] hover:text-white hover:bg-[#606C38] transition duration-700 easy-in-out">Learn More</button>
+            </div>
+            <div class="flex-1 flex items-center justify-center">
+                <img class="h-[300px]" src="images/Book1.jpg" alt="">
+            </div>
+        </div>
+        <div class="flex bg-[#FBFBFC] w-[500px] h-[350px] rounded-2xl">
+            <div class="flex-1 flex flex-col justify-center pl-8">
+                <h1 class="font-['Playfair_Display'] italic text-3xl font-bold font-['Cormorant_Garamond']">Gone with the Wind</h1>
+                <p class="text-lg font-semibold font-['Cormorant_Garamond'] mt-1 mb-20">Margaret Mitchell</p>
+                <button class="mt-12 bg-transparent border border-[#606C38] rounded-lg py-2 px-4 w-[150px] text-center text-[#606C38] hover:text-white hover:bg-[#606C38] transition duration-700 easy-in-out">Learn More</button>
+            </div>
+            <div class="flex-1 flex items-center justify-center">
+                <img class="h-[300px]" src="images/Book1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
