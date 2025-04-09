@@ -12,8 +12,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#2F3EF] flex flex-col items-center min-h-screen pt-[70px]">
-    <nav class="fixed top-0 left-0 right-0 bg-white shadow-md">
+<body class="bg-[#2F3EF] flex flex-col items-center min-h-screen pt-[70px] overflow-x-hidden">
+    <nav class="fixed top-0 left-0 right-0">
         <div class="flex justify-between items-center p-5">
             <div>
                 <img class="w-[150px] h-10" src="images/PagePlunge.svg" alt="">
@@ -35,37 +35,74 @@
             </ul>
         </div>
     </nav>
-
-    <div class="flex justify-center items-center bg-[#1D1D1D] gap-[160px] w-full h-[500px]">
-        <div class="flex bg-[#FBFBFC] w-[500px] h-[350px] rounded-2xl">
-            <div class="flex-1 flex flex-col justify-center pl-8">
-                <h1 class="font-['Playfair_Display'] italic text-3xl font-bold font-['Cormorant_Garamond']">Gone with the Wind</h1>
-                <p class="text-lg font-semibold font-['Cormorant_Garamond'] mt-1 mb-20">Margaret Mitchell</p>
-                <button class="mt-12 bg-transparent border border-[#606C38] rounded-lg py-2 px-4 w-[150px] text-center text-[#606C38] hover:text-white hover:bg-[#606C38] transition duration-700 easy-in-out">Learn More</button>
+<div class="flex flex-col md:flex-row justify-center items-center bg-[#1D1D1D] gap-6 md:gap-12 lg:gap-[160px] w-full h-auto md:h-[500px] py-6 md:py-2 overflow-x-auto md:overflow-x-hidden px-4">
+        <div class="flex bg-[#FBFBFC] w-[300px] sm:w-[400px] lg:w-[500px] h-[300px] sm:h-[350px] rounded-2xl">
+            <div class="flex-1 flex flex-col justify-center pl-6 sm:pl-8">
+                <h1 class="font-['Libre_Baskerville'] italic text-2xl sm:text-3xl font-bold">Gone with the Wind</h1>
+                <p class="text-base sm:text-lg font-semibold font-['Cormorant_Garamond'] mt-1 mb-10 sm:mb-20">Margaret Mitchell</p>
+                <button class="mt-6 sm:mt-12 bg-transparent border border-[#606C38] rounded-lg py-1 sm:py-2 px-3 sm:px-4 w-[120px] sm:w-[120px] text-center text-[#606C38] hover:text-white hover:bg-[#606C38] transition duration-700 ease-in-out">Learn More</button>
             </div>
-            <div class="flex-1 flex items-center justify-center">
-                <img class="h-[300px]" src="images/Book1.jpg" alt="">
-            </div>
-        </div>
-        <div class="flex bg-[#FBFBFC] w-[500px] h-[350px] rounded-2xl">
-            <div class="flex-1 flex flex-col justify-center pl-8">
-                <h1 class="font-['Playfair_Display'] italic text-3xl font-bold font-['Cormorant_Garamond']">Gone with the Wind</h1>
-                <p class="text-lg font-semibold font-['Cormorant_Garamond'] mt-1 mb-20">Margaret Mitchell</p>
-                <button class="mt-12 bg-transparent border border-[#606C38] rounded-lg py-2 px-4 w-[150px] text-center text-[#606C38] hover:text-white hover:bg-[#606C38] transition duration-700 easy-in-out">Learn More</button>
-            </div>
-            <div class="flex-1 flex items-center justify-center">
-                <img class="h-[300px]" src="images/Book1.jpg" alt="">
+            <div class="flex-1 flex items-center justify-center ">
+                <img class="h-[200px] sm:h-[250px] lg:h-[300px]" src="images/Book1.jpg" alt="">
             </div>
         </div>
-        <div class="flex bg-[#FBFBFC] w-[500px] h-[350px] rounded-2xl">
-            <div class="flex-1 flex flex-col justify-center pl-8">
-                <h1 class="font-['Playfair_Display'] italic text-3xl font-bold font-['Cormorant_Garamond']">Gone with the Wind</h1>
-                <p class="text-lg font-semibold font-['Cormorant_Garamond'] mt-1 mb-20">Margaret Mitchell</p>
-                <button class="mt-12 bg-transparent border border-[#606C38] rounded-lg py-2 px-4 w-[150px] text-center text-[#606C38] hover:text-white hover:bg-[#606C38] transition duration-700 easy-in-out">Learn More</button>
+        <div class="flex bg-[#FBFBFC] w-[300px] sm:w-[400px] lg:w-[500px] h-[300px] sm:h-[350px] rounded-2xl">
+            <div class="flex-1 flex flex-col justify-center pl-6 sm:pl-2">
+                <h1 class="font-['Libre_Baskerville'] italic text-2xl sm:text-3xl font-bold">The Great Gatsby</h1>
+                <p class="text-base sm:text-lg font-semibold font-['Cormorant_Garamond'] mt-1 mb-10 sm:mb-20">F. Scott Fitzgerald</p>
+                <button class="mt-6 sm:mt-12 bg-transparent border border-[#606C38] rounded-lg py-1 sm:py-2 px-3 sm:px-4 w-[120px] sm:w-[150px] text-center text-[#606C38] hover:text-white hover:bg-[#606C38] transition duration-700 ease-in-out">Learn More</button>
             </div>
             <div class="flex-1 flex items-center justify-center">
-                <img class="h-[300px]" src="images/Book1.jpg" alt="">
+                <img class="h-[200px] sm:h-[250px] lg:h-[300px]" src="images/Book2.jpg" alt="">
             </div>
+        </div>
+        <div class="flex bg-[#FBFBFC] w-[300px] sm:w-[400px] lg:w-[500px] h-[300px] sm:h-[350px] rounded-2xl">
+            <div class="flex-1 flex flex-col justify-center pl-6 sm:pl-8">
+                <h1 class="font-['Libre_Baskerville'] italic text-2xl sm:text-3xl font-bold">I, Claudius</h1>
+                <p class="text-base sm:text-lg font-semibold font-['Cormorant_Garamond'] mt-1 mb-10 sm:mb-20">Robert Graves</p>
+                <button class="mt-6 sm:mt-12 bg-transparent border border-[#606C38] rounded-lg py-1 sm:py-2 px-3 sm:px-4 w-[120px] sm:w-[150px] text-center text-[#606C38] hover:text-white hover:bg-[#606C38] transition duration-700 ease-in-out">Learn More</button>
+            </div>
+            <div class="flex-1 flex items-center justify-center">
+                <img class="h-[200px] sm:h-[250px] lg:h-[300px]" src="images/Book3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-8 mt-10 mb-10 px-4">
+        <div class="w-full aspect-[5/6]">
+            <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105 " src="images/Book4.jpg" alt="Book 4">
+        </div>
+        <div class="w-full aspect-[5/6]">
+            <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105" src="images/Book5.jpg" alt="Book 5">
+        </div>
+        <div class="w-full aspect-[5/6]">
+            <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105" src="images/Book6.jpg" alt="Book 6">
+        </div>
+        <div class="w-full aspect-[5/6]">
+            <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105" src="images/Book7.jpg" alt="Book 7">
+        </div>
+        <div class="w-full aspect-[5/6]">
+            <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105" src="images/Book8.jpg" alt="Book 8">
+        </div>
+        <div class="w-full aspect-[5/6]">
+            <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105" src="images/Book9.jpg" alt="Book 9">
+        </div>
+        <div class="w-full aspect-[5/6]">
+            <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105" src="images/Book10.jpg" alt="Book 10">
+        </div>
+        <div class="w-full aspect-[5/6]">
+            <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105" src="images/Book11.jpg" alt="Book 11">
+        </div>
+        <div class="w-full aspect-[5/6]">
+            <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105" src="images/Book12.jpg" alt="Book 12">
+        </div>
+        <div class="w-full aspect-[5/6]">
+            <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105" src="images/Book13.jpg" alt="Book 13">
+        </div>
+        <div class="w-full aspect-[5/6]">
+            <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105" src="images/Book14.jpg" alt="Book 14">
+        </div>
+        <div class="w-full aspect-[5/6]">
+            <img class="w-full h-full object-contain transition-transform duration-300 hover:scale-105" src="images/Book15.jpg" alt="Book 15">
         </div>
     </div>
 </body>
