@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail page</title>
+</head>
+<body class="bg-[#F2F3EF] flex flex-col items-center min-h-screen pt-[70px] overflow-x-hidden">
+    <nav class="fixed top-0 left-0 right-0  z-50">
+        <div class="flex justify-between items-center p-5">
+            <div>
+                <img class="w-[150px] h-10" src="images/PagePlunge.svg" alt="">
+            </div>
+            <button id="menu-toggle" class="md:hidden text-black focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <ul id="nav-links" class="fixed md:static top-0 left-[-100%] md:left-0 h-full md:h-auto w-64 md:w-auto bg-[#1D1D1D] md:bg-transparent text-white md:text-black p-5 md:p-0 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-5 text-2xl font-semibold font-['Cormorant_Garamond'] transition-all duration-300 ease-in-out md:flex">
+                <li class="hover:text-[#E63946] transition duration-700"><a href="#">Home</a></li>
+                <li class="relative group">
+                    <a class="hover:text-[#E63946] transition duration-700" href="#">Categories</a>
+                    <ul class="relative md:absolute hidden group-hover:block bg-white text-black mt-2 p-2 rounded-xl shadow-lg space-y-2">
+                        <li class="hover:text-[#E63946] transition duration-700"><a href="#">Romance</a></li>
+                        <li class="hover:text-[#E63946] transition duration-700"><a href="#">Science Fiction</a></li>
+                        <li class="hover:text-[#E63946] transition duration-700"><a href="#">Non-Fiction</a></li>
+                        <li class="hover:text-[#E63946] transition duration-700"><a href="#">Horror</a></li>
+                        <li class="hover:text-[#E63946] transition duration-700"><a href="#">Adventure</a></li>
+                    </ul>
+                </li>
+                <li class="hover:text-[#E63946] transition duration-700"><a href="#">Product</a></li>
+                <li class="hover:text-[#E63946] transition duration-700"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
