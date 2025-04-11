@@ -43,91 +43,96 @@
       </div>
     </nav>
     <div class="flex flex-col md:flex-row justify-center items-start bg-[#1D1D1D] w-full h-auto md:h-[600px] py-6 md:py-0 px-4 gap-6 md:gap-12 lg:gap-[70px]">
-      <form class="flex flex-col justify-center items-center md:flex-row w-full gap-6 md:gap-12 lg:gap-[70px]">
+      <form action="index_view.php" method="post" class="flex flex-col justify-center items-center md:flex-row w-full gap-6 md:gap-12 lg:gap-[70px]">
         <div class="flex-1 bg-[#FBFBFC] rounded-2xl mt-10 p-6 w-full md:max-w-[500px]">
-          <h1 class="font-['Playfair_Display'] italic text-2xl md:text-3xl text-[#1D1D1D] mb-6">Checkout</h1>
-          <div class="space-y-6">
-            <div>
-              <label class="block text-base font-['Cormorant_Garamond'] font-semibold text-[#606C38] mb-2">Full Name</label>
-              <input 
-                type="text" 
-                class="w-full border border-[#606C38] rounded-lg p-2 text-base border border-[#606C38] rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300" 
-                placeholder="Name" 
-                required 
-                pattern="[A-Za-z\s]{2,}" 
-                title="Please enter a valid name (letters and spaces only, min 2 characters)"
-              />
+            <h1 class="font-['Playfair_Display'] italic text-2xl md:text-3xl text-[#1D1D1D] mb-6">Checkout</h1>
+            <div class="space-y-6">
+                <div>
+                    <label class="block text-base font-['Cormorant_Garamond'] font-semibold text-[#606C38] mb-2">Full Name</label>
+                    <input 
+                        type="text" 
+                        name="name" 
+                        class="w-full border border-[#606C38] rounded-lg p-2 text-base focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300" 
+                        placeholder="Name" 
+                        required 
+                        pattern="[A-Za-z\s]{2,}" 
+                        title="Please enter a valid name (letters and spaces only, min 2 characters)"
+                    />
+                </div>
+                <div>
+                    <label class="block text-base font-['Cormorant_Garamond'] font-semibold text-[#606C38] mb-2">E-mail</label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        class="w-full border border-[#606C38] rounded-lg p-2 text-base focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300" 
+                        placeholder="E-mail" 
+                        required 
+                        title="Please enter a valid email address"
+                    />
+                </div>
+                <div>
+                    <label class="block text-base font-['Cormorant_Garamond'] font-semibold text-[#606C38] mb-2">Shipping</label>
+                    <select 
+                        class="w-full bg-[#FBFBFC] text-base font-['Cormorant_Garamond'] text-[#1D1D1D] border border-[#606C38] rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300" 
+                        name="shipping_method" 
+                        required
+                    >
+                        <option value="standard">Standard</option>
+                        <option value="express">Express</option>
+                        <option value="next day">Next Day</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-base font-['Cormorant_Garamond'] font-semibold text-[#606C38] mb-2">Shipping Address</label>
+                    <input 
+                        type="text" 
+                        name="shipping_address" 
+                        class="w-full border border-[#606C38] rounded-lg p-2 text-base focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300" 
+                        placeholder="Address" 
+                        required 
+                        minlength="5" 
+                        title="Please enter a valid address (at least 5 characters)"
+                    />
+                </div>
+                <!-- Hidden input for products (example) -->
+                <input type="hidden" name="products[]" value="Gone with the Wind">
             </div>
-            <div>
-              <label class="block text-base font-['Cormorant_Garamond'] font-semibold text-[#606C38] mb-2">E-mail</label>
-              <input 
-                type="email" 
-                class="w-full border border-[#606C38] rounded-lg p-2 text-base border border-[#606C38] rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300" 
-                placeholder="E-mail" 
-                required 
-                title="Please enter a valid email address"
-              />
-            </div>
-            <div>
-              <label class="block text-base font-['Cormorant_Garamond'] font-semibold text-[#606C38] mb-2">Shipping</label>
-              <select 
-                class="w-full bg-[#FBFBFC] text-base font-['Cormorant_Garamond'] text-[#1D1D1D] border border-[#606C38] rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300" 
-                name="Shipping" 
-                required
-              >
-                <option value="Standard">Standard</option>
-                <option value="Express">Express</option>
-                <option value="Next Day">Next Day</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-base font-['Cormorant_Garamond'] font-semibold text-[#606C38] mb-2">Shipping Address</label>
-              <input 
-                type="text" 
-                class="w-full border border-[#606C38] rounded-lg p-2 text-base border border-[#606C38] rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300" 
-                placeholder="Address" 
-                required 
-                minlength="5" 
-                title="Please enter a valid address (at least 5 characters)"
-              />
-            </div>
-          </div>
         </div>
         <div class="bg-[#FBFBFC] w-full md:w-[300px] lg:w-[400px] mt-10 h-auto md:h-[500px] rounded-2xl p-6 flex flex-col justify-between">
-          <div>
-            <h2 class="font-['Playfair_Display'] italic text-xl md:text-2xl text-[#1D1D1D] mb-6">Order Summary</h2>
-            <div class="space-y-4">
-              <div class="flex items-center gap-4">
-                <img class="w-12 h-16 object-contain" src="./images/Book1.jpg" alt="Gone with the Wind" />
-                <div class="flex-1">
-                  <p class="text-base font-['Cormorant_Garamond'] font-semibold text-[#1D1D1D]">Gone with the Wind</p>
-                  <p class="text-sm font-['Cormorant_Garamond'] text-[#606C38]">€19.99</p>
+            <div>
+                <h2 class="font-['Playfair_Display'] italic text-xl md:text-2xl text-[#1D1D1D] mb-6">Order Summary</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <img class="w-12 h-16 object-contain" src="./images/Book1.jpg" alt="Gone with the Wind" />
+                        <div class="flex-1">
+                            <p class="text-base font-['Cormorant_Garamond'] font-semibold text-[#1D1D1D]">Gone with the Wind</p>
+                            <p class="text-sm font-['Cormorant_Garamond'] text-[#606C38]">€19.99</p>
+                        </div>
+                    </div>
+                    <div class="border-t border-[#606C38] pt-4">
+                        <div class="flex justify-between text-base font-['Cormorant_Garamond'] text-[#1D1D1D]">
+                            <p>Subtotal</p>
+                            <p>€19.99</p>
+                        </div>
+                        <div class="flex justify-between text-base font-['Cormorant_Garamond'] text-[#1D1D1D] mt-2">
+                            <p>Shipping</p>
+                            <p>€5.00</p>
+                        </div>
+                        <div class="flex justify-between text-lg font-['Playfair_Display'] font-bold text-[#1D1D1D] mt-4">
+                            <p>Total</p>
+                            <p>€24.99</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="border-t border-[#606C38] pt-4">
-                <div class="flex justify-between text-base font-['Cormorant_Garamond'] text-[#1D1D1D]">
-                  <p>Subtotal</p>
-                  <p>€19.99</p>
-                </div>
-                <div class="flex justify-between text-base font-['Cormorant_Garamond'] text-[#1D1D1D] mt-2">
-                  <p>Shipping</p>
-                  <p>€5.00</p>
-                </div>
-                <div class="flex justify-between text-lg font-['Playfair_Display'] font-bold text-[#1D1D1D] mt-4">
-                  <p>Total</p>
-                  <p>€24.99</p>
-                </div>
-              </div>
             </div>
-          </div>
-          <button 
-            type="submit" 
-            class="mt-6 bg-transparent border border-[#606C38] rounded-lg py-2 px-4 w-full text-center text-[#606C38] hover:text-white hover:bg-[#606C38] transition duration-700 ease-in-out font-['Cormorant_Garamond'] text-lg"
-          >
-            Check Out
-          </button>
+            <button 
+                type="submit" 
+                class="mt-6 bg-transparent border border-[#606C38] rounded-lg py-2 px-4 w-full text-center text-[#606C38] hover:text-white hover:bg-[#606C38] transition duration-700 ease-in-out font-['Cormorant_Garamond'] text-lg"
+            >
+                Check Out
+            </button>
         </div>
-      </form>
+    </form>
     </div>
   </body>
 </html>
