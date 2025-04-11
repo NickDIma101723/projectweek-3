@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout - PagePlunge</title>
@@ -13,69 +13,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css"/>
     <script src="./js/script.js"defer></script>
-  </head>
-  <body class="bg-[#F2F3EF] flex flex-col items-center min-h-screen pt-[100px] md:pt-[140px] lg:pt-[220px] overflow-x-hidden">
-    <nav class="fixed top-0 left-0 right-0 z-50" style="animation: fadeIn 2.5s ease-in-out forwards; opacity: 0;">
-      <div class="flex justify-between items-center p-5">
+</head>
+<body class="bg-[#F2F3EF] flex flex-col items-center min-h-screen pt-[100px] md:pt-[140px] lg:pt-[220px] overflow-x-hidden">
+<nav class="fixed top-0 left-0 right-0 z-50" style="animation: fadeIn 2.5s ease-in-out forwards; opacity: 0;">
+    <div class="flex justify-between items-center p-5">
         <div>
-          <a href="./index.html"><img class="w-[150px] h-10" src="./images/PagePlunge.svg" alt=""></a>
+            <a href="./index.html"><img class="w-[150px] h-10" src="./images/PagePlunge.svg" alt=""></a>
         </div>
         <button id="menu-toggle" class="md:hidden text-black focus:outline-none">
-          <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000000">
-            <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
-          </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000000">
+                <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+            </svg>
         </button>
         <ul id="nav-links" class="fixed md:static top-0 left-[-100%] md:left-0 h-full md:h-auto w-64 md:w-auto bg-[#1D1D1D] md:bg-transparent text-white md:text-black p-5 md:p-0 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-5 text-2xl font-semibold font-['Cormorant_Garamond'] transition-all duration-300 ease-in-out md:flex">
-          <li class="hover:text-[#E63946] transition duration-700"><a href="./index.html">Home</a></li>
-          <li class="relative group">
-            <a class="hover:text-[#E63946] transition duration-700" href="#">Categories</a>
-            <ul class="relative md:absolute hidden group-hover:block bg-white text-black mt-2 p-2 rounded-xl shadow-lg space-y-2">
-              <li class="hover:text-[#606C38] transition duration-700"><a href="#">Romance</a></li>
-              <li class="hover:text-[#606C38] transition duration-700"><a href="#">Science Fiction</a></li>
-              <li class="hover:text-[#606C38] transition duration-700"><a href="#">Non-Fiction</a></li>
-              <li class="hover:text-[#606C38] transition duration-700"><a href="#">Horror</a></li>
-              <li class="hover:text-[#606C38] transition duration-700"><a href="#">Adventure</a></li>
-            </ul>
-          </li>
-          <li class="hover:text-[#606C38] transition duration-700"><a href="./detail.html">Detail</a></li>
-          <li class="hover:text-[#606C38] transition duration-700"><a href="./checkout.html">Checkout</a></li>
+            <li class="hover:text-[#E63946] transition duration-700"><a href="./index.html">Home</a></li>
+            <li class="relative group">
+                <a class="hover:text-[#E63946] transition duration-700" href="#">Categories</a>
+                <ul class="relative md:absolute hidden group-hover:block bg-white text-black mt-2 p-2 rounded-xl shadow-lg space-y-2">
+                    <li class="hover:text-[#606C38] transition duration-700"><a href="#">Romance</a></li>
+                    <li class="hover:text-[#606C38] transition duration-700"><a href="#">Science Fiction</a></li>
+                    <li class="hover:text-[#606C38] transition duration-700"><a href="#">Non-Fiction</a></li>
+                    <li class="hover:text-[#606C38] transition duration-700"><a href="#">Horror</a></li>
+                    <li class="hover:text-[#606C38] transition duration-700"><a href="#">Adventure</a></li>
+                </ul>
+            </li>
+            <li class="hover:text-[#606C38] transition duration-700"><a href="./detail.html">Detail</a></li>
+            <li class="hover:text-[#606C38] transition duration-700"><a href="./checkout.html">Checkout</a></li>
         </ul>
-      </div>
-    </nav>
-    <div class="flex flex-col md:flex-row justify-center items-start bg-[#1D1D1D] w-full h-auto md:h-[600px] py-6 md:py-0 px-4 gap-6 md:gap-12 lg:gap-[70px]">
-      <form action="index_view.php" method="post" class="flex flex-col justify-center items-center md:flex-row w-full gap-6 md:gap-12 lg:gap-[70px]">
+    </div>
+</nav>
+<div class="flex flex-col md:flex-row justify-center items-start bg-[#1D1D1D] w-full h-auto md:h-[600px] py-6 md:py-0 px-4 gap-6 md:gap-12 lg:gap-[70px]">
+    <form action="index_view.php" method="post" class="flex flex-col justify-center items-center md:flex-row w-full gap-6 md:gap-12 lg:gap-[70px]">
         <div class="flex-1 bg-[#FBFBFC] rounded-2xl mt-10 p-6 w-full md:max-w-[500px]">
             <h1 class="font-['Playfair_Display'] italic text-2xl md:text-3xl text-[#1D1D1D] mb-6">Checkout</h1>
             <div class="space-y-6">
                 <div>
                     <label class="block text-base font-['Cormorant_Garamond'] font-semibold text-[#606C38] mb-2">Full Name</label>
-                    <input 
-                        type="text" 
-                        name="name" 
-                        class="w-full border border-[#606C38] rounded-lg p-2 text-base focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300" 
-                        placeholder="Name" 
-                        required 
-                        pattern="[A-Za-z\s]{2,}" 
-                        title="Please enter a valid name (letters and spaces only, min 2 characters)"
+                    <input
+                            type="text"
+                            name="name"
+                            class="w-full border border-[#606C38] rounded-lg p-2 text-base focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300"
+                            placeholder="Name"
+                            required
+                            pattern="[A-Za-z\s]{2,}"
+                            title="Please enter a valid name (letters and spaces only, min 2 characters)"
                     />
                 </div>
                 <div>
                     <label class="block text-base font-['Cormorant_Garamond'] font-semibold text-[#606C38] mb-2">E-mail</label>
-                    <input 
-                        type="email" 
-                        name="email" 
-                        class="w-full border border-[#606C38] rounded-lg p-2 text-base focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300" 
-                        placeholder="E-mail" 
-                        required 
-                        title="Please enter a valid email address"
+                    <input
+                            type="email"
+                            name="email"
+                            class="w-full border border-[#606C38] rounded-lg p-2 text-base focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300"
+                            placeholder="E-mail"
+                            required
+                            title="Please enter a valid email address"
                     />
                 </div>
                 <div>
                     <label class="block text-base font-['Cormorant_Garamond'] font-semibold text-[#606C38] mb-2">Shipping</label>
-                    <select 
-                        class="w-full bg-[#FBFBFC] text-base font-['Cormorant_Garamond'] text-[#1D1D1D] border border-[#606C38] rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300" 
-                        name="shipping_method" 
-                        required
+                    <select
+                            class="w-full bg-[#FBFBFC] text-base font-['Cormorant_Garamond'] text-[#1D1D1D] border border-[#606C38] rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300"
+                            name="shipping_method"
+                            required
                     >
                         <option value="standard">Standard</option>
                         <option value="express">Express</option>
@@ -84,14 +84,14 @@
                 </div>
                 <div>
                     <label class="block text-base font-['Cormorant_Garamond'] font-semibold text-[#606C38] mb-2">Shipping Address</label>
-                    <input 
-                        type="text" 
-                        name="shipping_address" 
-                        class="w-full border border-[#606C38] rounded-lg p-2 text-base focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300" 
-                        placeholder="Address" 
-                        required 
-                        minlength="5" 
-                        title="Please enter a valid address (at least 5 characters)"
+                    <input
+                            type="text"
+                            name="shipping_address"
+                            class="w-full border border-[#606C38] rounded-lg p-2 text-base focus:outline-none focus:ring-2 focus:ring-[#606C38] transition duration-300"
+                            placeholder="Address"
+                            required
+                            minlength="5"
+                            title="Please enter a valid address (at least 5 characters)"
                     />
                 </div>
                 <!-- Hidden input for products (example) -->
@@ -125,14 +125,14 @@
                     </div>
                 </div>
             </div>
-            <button 
-                type="submit" 
-                class="mt-6 bg-transparent border border-[#606C38] rounded-lg py-2 px-4 w-full text-center text-[#606C38] hover:text-white hover:bg-[#606C38] transition duration-700 ease-in-out font-['Cormorant_Garamond'] text-lg"
+            <button
+                    type="submit"
+                    class="mt-6 bg-transparent border border-[#606C38] rounded-lg py-2 px-4 w-full text-center text-[#606C38] hover:text-white hover:bg-[#606C38] transition duration-700 ease-in-out font-['Cormorant_Garamond'] text-lg"
             >
                 Check Out
             </button>
         </div>
     </form>
-    </div>
-  </body>
+</div>
+</body>
 </html>
